@@ -67,7 +67,7 @@ export const FormConta = () => {
             data-test="botao-salvar-alteracoes"
             className={estilos.botao}
           >
-            Salvar alerações
+            Salvar alterações
           </button>
         </form>
       </div>
