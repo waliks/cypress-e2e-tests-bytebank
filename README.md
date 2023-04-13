@@ -4,8 +4,7 @@
 
 O Bytebank é uma start up de banco digital criada para desenvolvedores e desenvolvedoras. Atualmente está na fase de desenvolvimento e conforme novas funcionalidades são adicionadas novos testes precisam ser feitos, por isso iremos escrever e melhores os testes de ponta a ponta existente na aplicação utilizando o Cypress.
 
-<img src="tela-inicio.png" alt="Imagem do Freelando" width="50%">
-<img src="tela-home.png" alt="Imagem do Freelando" width="50%">
+<img src="screen.png" alt="Imagem do Bytebank" width="50%">
 
 
 ## 🔨 Funcionalidades do projeto
