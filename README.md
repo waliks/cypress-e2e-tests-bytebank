@@ -15,6 +15,7 @@ This project is based on the Alura courses on cypress e2e tests. The application
 
 [Here's the app's Figma prototype](https://www.figma.com/file/YJydxY5H8gf5lPLyKWOBbY?embed_host=notion&kind=&node-id=80%3A199&t=rKQJYFpJUumrCTx1-1&viewer=1).
 
+The objective is to cover the main use cases with automated e2e tests.
 
 ## Running the app
 On the api-bytebank-v2 folder, execute:
