@@ -1,47 +1,28 @@
-![Freelando](thumbnail.png)
+# Project
 
-# Bytebank
+This project is based on the Alura courses on cypress e2e tests. The application under test (Bytebank) is a simple digital bank app with basic features and pages, such as:
 
-O Bytebank é uma start up de banco digital criada para desenvolvedores e desenvolvedoras. Atualmente está na fase de desenvolvimento e conforme novas funcionalidades são adicionadas novos testes precisam ser feitos, por isso iremos escrever e melhores os testes de ponta a ponta existente na aplicação utilizando o Cypress.
+- Landing page
+- Homepage
+  - Cards page
+  - Services page
+  - Investments page
+- Not found page
+- My account page
 
 <img src="screen.png" alt="Imagem do Bytebank" width="50%">
 
 
-## 🔨 Funcionalidades do projeto
+[Here's the app's Figma prototype](https://www.figma.com/file/YJydxY5H8gf5lPLyKWOBbY?embed_host=notion&kind=&node-id=80%3A199&t=rKQJYFpJUumrCTx1-1&viewer=1).
 
-O projeto encontra-se em uma fase avançada, possuindo algumas páginas e diferentes telas como:
 
-- Página Inicial
-- Página Home
-  - Tela de Cartões
-  - Tela Serviços
-  - Tela Investimentos
-- Página 404
-- Página de minha conta
+## Running the app
+On the api-bytebank-v2 folder, execute `npm install` and then `npm run dev`
+On the project root, execute `npm install` and then `npm run start` .
 
-O [Figma dessa aplicação você encontra aqui](https://www.figma.com/file/YJydxY5H8gf5lPLyKWOBbY?embed_host=notion&kind=&node-id=80%3A199&t=rKQJYFpJUumrCTx1-1&viewer=1).
+The application will be running at <a href="http://localhost:3000/">http://localhost:3000/</a>.
 
-## ✔️ Técnicas e tecnologias utilizadas
+## Running the e2e tests
+`npx cypress open` to access the cypress dashboard
+or `npx cypress run --browser chrome` to run headlessly
 
-Se liga nessa lista de tudo que usaremos nesse curso:
-
-- `React`
-- `Create React App`
-- `Cypress`
-- `Axios`
-- `Faker.js`
-- `GitHub`
-- `Figma`
-
-E muito mais!
-
-## 🛠️ Abrir e rodar o projeto
-
-Para abrir e rodar o projeto, execute `npm install` para instalar as dependências e `npm start` para inicar a aplicação.
-
-Depois, acesse <a href="http://localhost:3000/">http://localhost:3000/</a> no seu navegador.
-
-## 📚 Mais informações do curso
-
-O Bytebank é uma Start up fictícia utilizada nesse curso da Alura.
-A ideia principal desse curso é mostrar como escrever e melhorar os testes de ponta a ponta utilizando a ferramenta Cypress.
