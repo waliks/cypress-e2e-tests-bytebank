@@ -1,54 +1,62 @@
 # Bytebank Test Plan V1
 
-##  1. Product, Revision and Overview
-Describe the product and revision designator.
-Describe briefly how the product works. Reference other material as appropriate.
-## 2. Product History
-Include a short history of previous revisions of this product. (3-4 sentences). Include defect history.
-## 3. Features to be tested
-List all features to be tested. Organize the list in the way that makes most sense- user features, or by level:
-Application
-Demo software
-Client substrate
-Server
-Network (this may be more layers)
-##  4. Features not to be tested
-Describe any features not to be tested
-##  5. Configurations to be tested and excluded
-I recommend a table showing which hardware configurations will be tested with which software.
-##  6. Environmental requirements
-Enumerate hardware, firmware, software, networks, etc. required to carry out the testing.
-##  7. System test methodology.
-Brief description of work items to be performed from the beginning to the end of the product development.
-##  8. Initial Test requirements
-Test strategy (this document), written by test personnel, reviewed by product team, agreed to by project manager.
-## 9. System test entry and exit criteria
-        9.1. Entry Criteria
-The software must meet the criteria below before the product can start system test. Specifically enumerate any project-specific departures from the Generic Criteria. This list must be negotiated with and agreed upon by the project leader.
-Generic criteria:
+## 1. Product, Revision, and Overview
+Bytebank is a digital banking web application that allows users to create accounts, perform basic banking operations (such as deposits and withdrawals), and view their financial information. It is built with a React frontend for the user interface and a Node.js backend to manage server-side operations and data storage.
+
+- [UI Figma Prototype](https://www.figma.com/file/YJydxY5H8gf5lPLyKWOBbY?embed_host=notion&kind=&node-id=80%3A199&t=rKQJYFpJUumrCTx1-1&viewer=1)
+- [Bytebank API original repo](https://github.com/NeiltonSeguins/api-bytebank-v2)
+- [Bytebank original repo](https://github.com/NeiltonSeguins/bytebank-v2)
+
+## 2. Features to be tested
+- Account registration
+- Login
+- Make transactions (deposit and transfer)
+- Edit account
+- Visualize investments 
+
+## 3. Features not to be tested
+The following features are still not implemented, therefore they will not be tested at the moment.
+
+- Cards management
+- Services options
+
+## 4. Configurations to be tested and excluded
+The application will be tested for on linux/chrome with the following page sizes:
+| Width   | Height  |
+| ------: | ------: |
+| 1536	  | 960     |
+| 414	  | 896     |
+
+## 5. System test methodology.
+Methodology will consist of automating functional end-to-end tests for the above-mentioned features, on the levels of User Interface (UI) and API. Furthermore, there will be implemented visual regression tests.
+
+## 6. System test entry and exit criteria
+### 6.1. Entry Criteria
+The software must meet the criteria below before the product can start system test:
+
 1. All basic functionality must work.
 2. All unit tests run without error.
 3. The code is frozen and contains complete functionality.
-4. The source code is checked into the CMS.
-5. All code compiles and builds on the appropriate platforms.
-6. All known problems posted to the bug-tracking system.
-        9.2. Exit Criteria
-The software must meet the criteria below before the product can exit from system test. Specifically enumerate any project-specific departures from the Generic Criteria. This list must be negotiated with and agreed upon by the project leader.
-Generic criteria:
+4. All code compiles and builds on the appropriate platforms.
+5. All known problems posted to the bug-tracking system.
+
+### 6.2. Exit Criteria
+The software must meet the criteria below before the product can exit from system test:
 1. All system tests executed (not passed, just executed).
-2. Successful execution of any "Getting Started" sequence.
+2. Successful execution of all test cases for the following features:
+- Account registration
+- Login
+- Make transactions (deposit and transfer)
 3. Results of executed tests must be discussed with product management team.
-4. Successful generation of executable images for all appropriate platforms.
+4. Documentation review is complete.
 5. Code is completely frozen.
-6. Documentation review is complete.
-7. There are 0 showstopper bugs.
-8. There are fewer than <x> major bugs, and <y> minor bugs.
-##  10. Test Deliverables
-• Automated tests in <framework>
-• Test Strategy and SQA project plan
-• Test procedure
-• Test logs
-• Bug-tracking system report of all issues raised during SQA process
-• Test Coverage measurement
-    11. References
-Other documents referring the project or testing.
+6. There are 0 showstopper bugs.
+7. There are fewer than 2 major bugs, and 5 minor bugs.
+
+## 7. Test Deliverables
+- Automated end-to-end tests in cypress
+- Automated API tests in cypress
+- Automated visual regression tests
+- Visual regression tests report
+- Postman API collection
+- Bug-tracking system report of all issues raised during SQA process
