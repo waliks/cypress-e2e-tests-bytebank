@@ -15,3 +15,4 @@ Cypress.Commands.add('loginUI', (email, password) => {
      cy.getByDataTest('botao-enviar').click()
     })
 })
+
