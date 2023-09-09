@@ -16,7 +16,7 @@ The application under test (Bytebank) is a simple digital bank app with basic fe
 
 [Here's the app's Figma prototype](https://www.figma.com/file/YJydxY5H8gf5lPLyKWOBbY?embed_host=notion&kind=&node-id=80%3A199&t=rKQJYFpJUumrCTx1-1&viewer=1).
 
-Some characteristics and best practices we may find in this cypress project:
+⭐ Some characteristics and best practices we may find in this cypress project:
 - Uses custom commands
 - Uses test-data for most of the selectors
 - Test cases written in gherkin style (GIVEN, WHEN, THEN)
