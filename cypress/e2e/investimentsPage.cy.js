@@ -2,7 +2,7 @@ describe('Investiments Page', () => {
     context('Given that I\'m logged in', () => {
 
         beforeEach(() => {
-            cy.loginAPI('automated@test.com', '123')
+            cy.loginAPI('automated@test.com', 'password123')
             cy.visit('/home')
         })
 
