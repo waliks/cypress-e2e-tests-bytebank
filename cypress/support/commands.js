@@ -16,3 +16,15 @@ Cypress.Commands.add('loginUI', (email, password) => {
     })
 })
 
+Cypress.Commands.add('loginAPI', (email, password) => {
+    cy.session([email, password], () => {
+      cy.request({
+        method: 'POST',
+        url: 'http://localhost:8000/users/login',
+        body: {
+            email: email,
+            senha: password
+        }
+      })
+    })
+ })
